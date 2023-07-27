@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: chatbot-ui
+  description: Chatbot UI
+  tags:
+  - chatgpt
+  - openai
+  annotations:
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=chatbot-ui
+spec:
+  type: service
+  lifecycle: experimental
+  owner: default-team
